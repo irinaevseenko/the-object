@@ -1,0 +1,50 @@
+@font-face {
+    font-family: GTSuperDisplay-Medium;
+    src: url(../assets/GTSuperDisplay-Medium.otf);
+  }
+
+.container {
+    width: 100%;
+}  
+
+h1 {
+    font-family: GTSuperDisplay-Medium;
+    color:blue;
+    font-size: 47px;
+    margin: 0px;
+}
+
+
+p {
+    font-size: 47px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    line-height: 62px;
+}
+
+.flow {
+    z-index: 1;
+    /* position: fixed; */
+    bottom: 500px;
+    left: 50px;
+    animation: slideOutDown 10s linear infinite;
+    position: absolute;
+
+}
+
+.flow img {
+    width: 20vw;
+    
+}
+
+  
+@keyframes slideOutDown {
+    from {
+      transform: translateY();
+    }
+  
+    to {
+      visibility: hidden;
+      transform: translateY(1000px);
+    }
+  }
