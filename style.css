@@ -9,42 +9,106 @@
 
 h1 {
     font-family: GTSuperDisplay-Medium;
-    color:blue;
+    color:white;
     font-size: 47px;
     margin: 0px;
 }
 
+body {
+
+  background-color: white;
+}
 
 p {
-    font-size: 47px;
+    font-family: GTSuperDisplay-Medium;
+    font-size: 52px;
     margin-left: 7vw;
     margin-right: 7vw;
-    line-height: 62px;
+    line-height: 70px;
 }
 
 .flow {
-    z-index: 1;
+    /* z-index: 1; */
     /* position: fixed; */
-    bottom: 500px;
-    left: 50px;
-    animation: slideOutDown 10s linear infinite;
+    /* bottom: 500px;
+    left: 50px; */
     position: absolute;
-
 }
 
-.flow img {
-    width: 20vw;
-    
+.flow .first {
+    z-index: 1;
+    width: 15vw;
+    animation: slideOutDown 11s linear infinite;
+    /* bottom: 500px; */
+    left: 50px;
+    /* position: absolute; */
+}
+.flow .second {
+  z-index: 1;
+  width: 11vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -3s;
+  /* bottom: 500px; */
+  left: 100px;
+  /* position: absolute; */
+}
+
+.flow .third {
+  z-index: 1;
+  width: 10vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -5s;
+  /* bottom: 500px; */
+  left: 50px;
+  /* position: absolute; */
+}
+
+.flow .forth {
+  z-index: 1;
+  width: 10vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -3s;
+  /* bottom: 500px; */
+  left: 50px;
+  /* position: absolute; */
+}
+
+.flow .fifth {
+  z-index: 1;
+  width: 10vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -1s;
+  /* bottom: 500px; */
+  left: 50px;
+  /* position: absolute; */
+}
+
+.flow .sixth {
+  z-index: 1;
+  width: 10vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -4s;
+  /* bottom: 500px; */
+  left: 50px;
+  /* position: absolute; */
+}
+
+.flow .seventh {
+  z-index: 1;
+  width: 15vw;
+  animation: slideOutDown 11s linear infinite;
+  animation-delay: -2s;
+  /* bottom: 500px; */
+  left: 50px;
+  /* position: absolute; */
 }
 
   
 @keyframes slideOutDown {
     from {
-      transform: translateY();
+      transform: translateY(-300px);
     }
-  
     to {
-      visibility: hidden;
       transform: translateY(1000px);
     }
   }
