@@ -88,8 +88,9 @@ img.expanded {
     line-height: 55px;}
 
   img {
-  height: 35px;}
+    height: 35px;
+  }
 
   .zoom:hover {
-  transform: none;
-}
+    transform: none;}
+  }
