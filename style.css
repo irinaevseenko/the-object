@@ -1,18 +1,6 @@
-/* @font-face {
-    font-family: GTSuperDisplay-Medium;
-    src: url(../assets/GTSuperDisplay-Medium.otf);
-  } */
-
 .container {
     width: 100%;
 }  
-
-/* h1 {
-    font-family: GTSuperDisplay-Medium;
-    color:white;
-    font-size: 47px;
-    margin: 0px;
-} */
 
 body {
 
@@ -40,6 +28,7 @@ p {
 }
 
 .zoom {
+  overflow: hidden;
   transition: transform .2s;
   size: 70vw;
   margin: 0 auto;
@@ -47,7 +36,9 @@ p {
 
 .zoom:hover {
   /* transform: scale(10.5) translate(-50%,-50%); */
+  overflow: hidden;
   transform: scale(7);
+
 }
 
 a {
@@ -57,23 +48,48 @@ a {
 }
 
 
-a:hover {
+/* a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-style: italic;
+} */
+
+.button-1:hover, .button-2:hover, .button-3:hover, .button-4:hover, .button-5:hover, .button-6:hover, .button-7:hover, .button-8:hover, .button-9:hover, .button-10:hover {
   cursor: pointer;
   /* text-decoration: underline; */
   font-style: italic;
   
 }
 
+/* по умолчанию span с классом sentence скрыт */
+.sentence-1, .sentence-2, .sentence-3, .sentence-4, .sentence-5, .sentence-6, .sentence-7, .sentence-8, .sentence-9, .sentence-10 {
+  display: none;
+  visibility: hidden;
+  /* color: red; */
+  font-style: italic;
+}
+
+/* чтобы включить его мы добавляем класс show */
+.show {
+  display: inline;
+  visibility: visible;
+}
+
 
 img {
   /* height: 55px; */
+  overflow: hidden;
+  z-index: 1;
   height: 3.5vw;
 }
 
 img.expanded {
+  overflow: hidden;
   max-width: 100%;
   min-height: 100%;
+
 }
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -91,6 +107,54 @@ img.expanded {
     height: 35px;
   }
 
-  .zoom:hover {
-    transform: none;}
-  }
+  .zoom:hover {transform: none;}
+  /* .zoom:onclick {transform: scale(7);} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 80%;
+  height: auto;
+}
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  color:white;
+  font-size: 40px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+}
