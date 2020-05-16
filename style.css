@@ -91,7 +91,7 @@ img.expanded {
 }
 
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 
   p {
     margin-top: 10px;
@@ -100,14 +100,15 @@ img.expanded {
     margin-right: 11px;
 
     font-family: Times;
-    font-size: 35px;
-    line-height: 55px;}
+    font-size: 25px;
+    line-height: 45px;}
 
   img {
-    height: 35px;
+    height: 30px;
   }
 
-  .zoom:hover {transform: none;}
+  .zoom:hover {transform: none;} */
+
   /* .zoom:onclick {transform: scale(7);} */
 
 .modal {
@@ -128,9 +129,10 @@ img.expanded {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 80%;
+  /* width: 80%; */
+  max-width: 80vw;
   height: auto;
+  max-height: 80vh;
 }
 
 /* Add Animation */
@@ -156,5 +158,26 @@ img.expanded {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    font-family: Times;
+    font-size: 25px;
+    line-height: 45px;}
+
+  img {
+    height: 30px;
+  }
+
+  .zoom:hover {transform: none;}
+  /* .zoom:onclick {transform: scale(7);} */
 
 }
