@@ -161,7 +161,7 @@ img.expanded {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 
   p {
     margin-top: 10px;
@@ -170,7 +170,7 @@ img.expanded {
     margin-right: 11px;
 
     font-family: Times;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 45px;}
 
   img {
