@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     width: 100%;
 }  
@@ -170,7 +174,7 @@ img.expanded {
     margin-right: 11px;
 
     font-family: Times;
-    font-size: 19px;
+    font-size: 25px;
     line-height: 45px;}
 
   img {
